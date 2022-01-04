@@ -1,14 +1,47 @@
 {
-  "name": "tenantcloud-stylelint-config",
+  "name": "tenantcloud-stylelint-scss-config",
   "version": "1.0.0",
-  "description": "> Это стандартный конфигурационный файл для stylelint от [HTML Academy](https://htmlacademy.ru/).",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
+  "description": "This standard defines TenantCloud internal requirements for code formatting and style for teams that develop SCSS and CSS code.",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "TenantCloud",
+    "Tenant Cloud",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "stylelint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kifork/tenantcloud-styleling-config.git"
   },
+  "author": " <k.kifor@tenantcloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kifork/tenantcloud-styleling-config/issues"
+  },
+  "homepage": "https://github.com/kifork/tenantcloud-styleling-configy#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx stylelint test/**/*.scss --config index.js",
+    "fix": "npx stylelint test/**/*.scss --config index.js --fix"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "stylelint": "^14.2.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0"
+  }
 }

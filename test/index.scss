@@ -1,0 +1,50 @@
+@mixin reset-list {
+  margin: 0;
+}
+
+@mixin breakpoint-min() {
+  padding: 0;
+}
+
+@mixin breakpoint-max() {
+  padding: 0;
+}
+
+@mixin before() {
+  padding: 0;
+}
+
+@mixin after() {
+  padding: 0;
+}
+
+.block {
+  @include reset-list;
+
+  position: absolute;
+  font-weight: 600;
+  font-size: 15px;
+  color: red;
+  background-image: url("vscode-error.png");
+
+  @include breakpoint-min;
+  @include breakpoint-max;
+  @include before;
+  @include after;
+
+  p {
+    bottom: 0;
+  }
+
+  .block {
+    margin: 0;
+  }
+
+  #dsd {
+    padding: 0;
+  }
+
+  @media (min-width: 320px) {
+    font-size: 14px;
+  }
+}
