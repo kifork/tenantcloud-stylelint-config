@@ -25,14 +25,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kifork/tenantcloud-styleling-config.git"
+    "url": "git+https://github.com/kifork/tenantcloud-stylelint-config.git"
   },
   "author": "<k.kifor@tenantcloud.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kifork/tenantcloud-styleling-config/issues"
+    "url": "https://github.com/kifork/tenantcloud-stylelint-config/issues"
   },
-  "homepage": "https://github.com/kifork/tenantcloud-styleling-configy#readme",
+  "homepage": "https://github.com/kifork/tenantcloud-stylelint-configy#readme",
   "scripts": {
     "test": "npx stylelint test/**/*.scss --config index.js",
     "fix": "npx stylelint test/**/*.scss --config index.js --fix"
