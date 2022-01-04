@@ -1,10 +1,8 @@
 {
   "name": "tenantcloud-stylelint-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "This standard defines TenantCloud internal requirements for code formatting and style for teams that develop SCSS and CSS code.",
-  "files": [
-    "index.js"
-  ],
+  "main": "index.js",
   "keywords": [
     "TenantCloud",
     "Tenant Cloud",
