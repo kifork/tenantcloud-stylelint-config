@@ -11,9 +11,9 @@ npm install tenantcloud-stylelint-config --save-dev
 
 ## Usage
 
-If your project does not already have stylelint, then in the root of the project create the file `.stylelintrc`, or with the extension` .stylelintrc.js` so that the code editor can highlight the syntax.
+If your project does not already have stylelint, then in the root of the project create the file `.stylelintrc`, or with the extension `.stylelintrc.js` so that the code editor can highlight the syntax.
 
-Then add `tenantcloud-stylelint-config` to the` .stylelintrc` config file.
+Then add `tenantcloud-stylelint-config` to the `.stylelintrc` config file.
 
 _.stylelintrc_
 ```json
@@ -22,7 +22,7 @@ _.stylelintrc_
 }
 ```
 
-If you have installed `tenantcloud-stylelint-config` globally using the` -g` flag, then you need to use the absolute path of `tenantcloud-stylelint-config` in the config file:
+If you have installed `tenantcloud-stylelint-config` globally using the `-g` flag, then you need to use the absolute path of `tenantcloud-stylelint-config` in the config file:
 
 
 _.stylelintrc_

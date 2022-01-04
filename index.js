@@ -4,6 +4,7 @@ const orderOfProperties = require('./order/properties.js');
 const orderOfContent = require('./order/content');
 
 module.exports = {
+  syntax: 'postcss-scss',
   extends: 'stylelint-config-standard-scss',
   plugins: [
     'stylelint-order',
