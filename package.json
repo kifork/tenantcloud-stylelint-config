@@ -1,6 +1,6 @@
 {
   "name": "tenantcloud-stylelint-scss-config",
-  "version": "1.0.3",
+  "version": "1.0.35",
   "description": "This standard defines TenantCloud internal requirements for code formatting and style for teams that develop SCSS and CSS code.",
   "files": [
     "index.js"
@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/kifork/tenantcloud-stylelint-scss-config/issues"
   },
-  "homepage": "https://github.com/kifork/tenantcloud-stylelint-scss-configy#readme",
+  "homepage": "https://github.com/kifork/tenantcloud-stylelint-scss-config#readme",
   "scripts": {
     "test": "npx stylelint test/**/*.scss --config index.js",
     "fix": "npx stylelint test/**/*.scss --config index.js --fix"
