@@ -36,7 +36,7 @@ _.stylelintrc_
 
 You can override existing rules or add new ones.
 
-To do this, add the `" rules "` key to the config right after `" extends ":" tenantcloud-stylelint-scss-config "`, and then add your own rules.
+To do this, add the `"rules"` key to the config right after `"extends": "tenantcloud-stylelint-scss-config"`, and then add your own rules.
 
 _.stylelintrc_
 ```json
@@ -64,4 +64,4 @@ _.stylelintrc_
 
 ![](vscode-error.png)
 
-_ in the example, the rule `'color-named': 'never'` was triggered, which prohibits the use of colors by name_
+_In the example, the rule `'color-named': 'never'` was triggered, which prohibits the use of colors by name_
