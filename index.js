@@ -1,7 +1,7 @@
 'use strict';
 
-const orderOfProperties = require('./properties.js');
-const orderOfContent = require('./content');
+const orderOfProperties = require('./order/properties.js');
+const orderOfContent = require('./order/content');
 
 module.exports = {
   extends: 'stylelint-config-standard-scss',
