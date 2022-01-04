@@ -1,7 +1,7 @@
 'use strict';
 
-const orderOfProperties = require('./order/properties.js');
-const orderOfContent = require('./order/content');
+const orderOfProperties = require('./dist/properties.js');
+const orderOfContent = require('./dist/content');
 
 module.exports = {
   extends: 'stylelint-config-standard-scss',
@@ -14,10 +14,10 @@ module.exports = {
   rules: {
     'order/properties-order': [
       {
-        properties: orderOfProperties /* Specify the order of properties within declaration blocks */,
+        properties: orderOfProperties /* Specify the dist of properties within declaration blocks */,
       },
     ],
-    'order/order': orderOfContent /* Specify the order of content within declaration blocks */,
+    'order/order': orderOfContent /* Specify the dist of content within declaration blocks */,
     'font-family-no-missing-generic-family-keyword': true,
     'no-descending-specificity': null,
     'color-hex-case': 'lower',
