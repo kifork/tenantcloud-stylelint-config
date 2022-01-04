@@ -25,11 +25,12 @@ const breakpoints = (...breakpoints) =>
   });
 
 const breakpointsOrdering = ['min', 'only', 'between', 'max'];
-const selectorsOrdering = ['^[a-z]', '^\\.\\w+', '^#']; // tag -> class -> id
+const selectorsOrdering = ['^[a-z]', '^\\.\\w+', '^#', '^&\\.\\w+']; // tag -> class -> id
 const pseudoElementsOrdering = ['^&::before', '^&::after', '^&::[a-z]'];
 const pseudoClassesOrdering = [
   '^&:first-letter',
   '^&:first',
+  '^&:nth',
   '^&:last',
   '^&:not',
   '^&:hover',

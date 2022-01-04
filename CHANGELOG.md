@@ -1,5 +1,8 @@
 # Change log
 
+## 1.0.5
+- Added new rules
+
 ## 1.0.3
 - Updated dependencies
 

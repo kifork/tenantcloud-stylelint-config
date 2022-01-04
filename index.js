@@ -4,8 +4,7 @@ const orderOfProperties = require('./order/properties.js');
 const orderOfContent = require('./order/content');
 
 module.exports = {
-  syntax: 'postcss-scss',
-  extends: 'stylelint-config-standard-scss',
+  customSyntax: 'postcss-scss',
   plugins: [
     'stylelint-order',
     'stylelint-declaration-block-no-ignored-properties',
@@ -63,7 +62,6 @@ module.exports = {
       },
     ],
     'keyframe-declaration-no-important': true,
-    'declaration-no-important': true,
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
     'declaration-colon-space-after': 'always-single-line',
@@ -133,12 +131,6 @@ module.exports = {
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always',
-    'at-rule-no-unknown': [
-      true,
-      {
-        'ignoreAtRules': ['mixin', 'define-mixin', 'include', 'content', 'rules', 'each'],
-      },
-    ],
     'media-feature-name-no-unknown': [
       true,
       {
@@ -148,7 +140,7 @@ module.exports = {
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
     'indentation': 'tab',
-    'max-nesting-depth': [2, { 'ignoreAtRules': ['media'] }],
+    'max-nesting-depth': null,
     'max-empty-lines': 1,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
@@ -157,7 +149,6 @@ module.exports = {
     'color-no-invalid-hex': true,
     'color-no-hex': true,
     'color-named': 'never',
-    'number-max-precision': 2,
     'alpha-value-notation': 'number',
     'comment-empty-line-before': [
       'always',
@@ -193,7 +184,6 @@ module.exports = {
     'media-feature-name-disallowed-list': ['max-width', 'min-width'],
     'no-empty-source': null,
     'plugin/declaration-block-no-ignored-properties': true,
-    'scss/at-rule-no-unknown': true,
     'scss/dollar-variable-colon-newline-after': null,
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-pattern': '^[a-z0-9-]+$',
@@ -223,5 +213,20 @@ module.exports = {
       ],
     ],
     'unit-no-unknown': true,
+    'block-no-empty': true,
+    'custom-property-no-missing-var-function': true,
+    'declaration-block-no-duplicate-custom-properties': true,
+    'declaration-block-no-shorthand-property-overrides': true,
+    'font-family-no-duplicate-names': true,
+    'function-linear-gradient-no-nonstandard-direction': true,
+    'named-grid-areas-no-invalid': true,
+    'no-duplicate-selectors': true,
+    'no-extra-semicolons': true,
+    'no-invalid-double-slash-comments': true,
+    'no-irregular-whitespace': true,
+    'property-no-unknown': true,
+    'selector-pseudo-class-no-unknown': true,
+    'selector-pseudo-element-no-unknown': true,
+    'string-no-newline': true,
   },
 };
