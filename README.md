@@ -1,47 +1,47 @@
-# stylelint-config-htmlacademy
-> Это стандартный конфигурационный файл для stylelint от [HTML Academy](https://htmlacademy.ru/).
+# tenantcloud-stylelint-scss-config
+> This is the default config file for stylelint from [TenantCloud](https://www.tenantcloud.com/).
 
-Используйте его как есть или как основу для вашей собственной конфигурации.
+Use it as is or as a basis for your own configuration.
 
-## Установка
+## Installation
 
 ```bash
-npm install stylelint-config-htmlacademy --save-dev
+npm install tenantcloud-stylelint-scss-config --save-dev
 ```
 
-## Использование
+## Usage
 
-Если в вашем проекте ещё нет stylelint, то в корне проекта создайте файл `.stylelintrc`, либо с расширением `.stylelintrc.js`, чтобы редактор кода мог выделить синтаксис.
+If your project does not already have stylelint, then in the root of the project create the file `.stylelintrc`, or with the extension` .stylelintrc.js` so that the code editor can highlight the syntax.
 
-После добавьте `stylelint-config-htmlacademy` в конфигурационный файл `.stylelintrc`.
+Then add `tenantcloud-stylelint-scss-config` to the` .stylelintrc` config file.
 
 _.stylelintrc_
 ```json
 {
-  "extends": "stylelint-config-htmlacademy"
+  "extends": "tenantcloud-stylelint-scss-config"
 }
 ```
 
-Если вы установили `stylelint-config-htmlacademy` глобально с помощью флага `-g`, тогда вам нужно использовать абсолютный путь `stylelint-config-htmlacademy` в конфигурационном файле:
+If you have installed `tenantcloud-stylelint-scss-config` globally using the` -g` flag, then you need to use the absolute path of `tenantcloud-stylelint-scss-config` in the config file:
 
 
 _.stylelintrc_
 ```json
 {
-  "extends": "/absolute/path/to/stylelint-config-htmlacademy"
+  "extends": "/absolute/path/to/tenantcloud-stylelint-scss-config"
 }
 ```
 
-## Расширение конфига
+## Expanding the config
 
-Вы можете переопределить существующие правила или добавить новые.
+You can override existing rules or add new ones.
 
-Для этого добавьте ключ `"rules"` в конфиг сразу после `"extends": "stylelint-config-htmlacademy"`, а затем добавляйте свои правила.
+To do this, add the `" rules "` key to the config right after `" extends ":" tenantcloud-stylelint-scss-config "`, and then add your own rules.
 
 _.stylelintrc_
 ```json
 {
-  "extends": "stylelint-config-htmlacademy",
+  "extends": "tenantcloud-stylelint-scss-config",
   "rules": {
     "indentation": "tab",
     "number-leading-zero": null,
@@ -55,13 +55,13 @@ _.stylelintrc_
 }
 ```
 
-## Использование в VSCode
+## Usage in VSCode
 
-1. Откройте VScode
-2. Установите плагин [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-3. Пользуйтесь
-4. В случае если ваш код не соответствует правилам `stylelint-config-htmlacademy` он будет подчёркнут красной линией.
+1. Open VScode
+2. Install plugin [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+3. Use
+4. If your code does not comply with the rules of `tenantcloud-stylelint-scss-config` it will be underlined with a red line.
 
 ![](vscode-error.png)
 
-_в примере сработало правило `'color-named' : 'never'`, которое запрещает использовать цвета по имени_
+_ in the example, the rule `'color-named': 'never'` was triggered, which prohibits the use of colors by name_
