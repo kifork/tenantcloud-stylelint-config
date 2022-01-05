@@ -87,7 +87,6 @@ module.exports = {
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
     'selector-descendant-combinator-no-non-space': true,
-    'selector-max-id': null,
     'selector-pseudo-class-case': 'lower',
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-case': 'lower',
@@ -140,7 +139,9 @@ module.exports = {
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
     'indentation': 'tab',
-    'max-nesting-depth': null,
+    'max-nesting-depth': [3, {
+      'ignore': ['blockless-at-rules']
+    }],
     'max-empty-lines': 1,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
@@ -188,18 +189,36 @@ module.exports = {
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-pattern': '^[a-z0-9-]+$',
     'scss/at-mixin-parentheses-space-before': 'never',
+    'scss/selector-nest-combinators': 'always',
+    'scss/selector-no-redundant-nesting-selector': true,
+    'scss/selector-no-union-class-name': true,
+    'scss/operator-no-unspaced': true,
+    'scss/no-duplicate-mixins': true,
+    'scss/no-duplicate-dollar-variables': true,
+    'scss/map-keys-quotes': 'always',
+    'scss/function-unquote-no-unquoted-strings-inside': true,
+    'scss/comment-no-empty': true,
+    'scss/double-slash-comment-whitespace-inside': 'always',
+    'scss/double-slash-comment-inline': 'always',
+    'scss/dollar-variable-first-in-block': true,
+    'scss/at-rule-conditional-no-parentheses': true,
+    'scss/at-mixin-argumentless-call-parentheses': 'never',
+    'scss/at-import-partial-extension-whitelist': ['scss'],
+    'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
+    'scss/at-if-closing-brace-space-after': 'always-intermediate',
+    'scss/at-if-no-null': true,
     'sh-waqar/declaration-use-variable': [
       [
         '/color/',
         'background-color',
         'font-family',
         'font-size',
+        'size',
+        'line-height',
         'stroke',
         'fill',
         {
           'ignoreValues': [
-            '/^darken/',
-            '/^lighten/',
             '/^rgba/',
             'inherit',
             'initial',
@@ -208,6 +227,7 @@ module.exports = {
             '/^rem/',
             '/em$/',
             '0',
+            '1',
             '/^url/',
           ],
         },
@@ -228,5 +248,11 @@ module.exports = {
     'property-no-unknown': true,
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
+    'selector-class-pattern': [
+      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      {
+        'message': 'Please write the name of the selectors in the kebab case format'
+      }
+    ]
   },
 };

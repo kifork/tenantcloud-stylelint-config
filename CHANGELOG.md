@@ -1,4 +1,7 @@
 # Change log
+## 1.1.3
+- Added new scss rules
+
 ## 1.1.2
 - Added new content order
 
