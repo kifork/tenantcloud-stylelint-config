@@ -1,0 +1,17 @@
+.block {
+	p {
+		padding: 0;
+
+		p {
+			padding: 0;
+
+			p {
+				padding: 0;
+
+				&:last-child {
+					padding: 0;
+				}
+			}
+		}
+	}
+}

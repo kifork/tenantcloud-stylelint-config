@@ -140,7 +140,7 @@ module.exports = {
     'at-rule-semicolon-newline-after': 'always',
     'indentation': 'tab',
     'max-nesting-depth': [3, {
-      'ignore': ['blockless-at-rules']
+      'ignore': ['blockless-at-rules', 'pseudo-classes']
     }],
     'max-empty-lines': 1,
     'no-eol-whitespace': true,
