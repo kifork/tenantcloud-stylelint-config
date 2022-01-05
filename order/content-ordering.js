@@ -25,18 +25,27 @@ const breakpoints = (...breakpoints) =>
   });
 
 const breakpointsOrdering = ['min', 'only', 'between', 'max'];
-const selectorsOrdering = ['^[a-z]', '^\\.\\w+', '^#', '^&\\.\\w+']; // tag -> class -> id
-const pseudoElementsOrdering = ['^&::before', '^&::after', '^&::[a-z]'];
+const selectorsOrdering = ['^[a-z]', '^\\*', '^\\.\\w+', '^\\>', '^\\+', '^\\~', '^#', '^&\\.\\w+', '^&:not'];
+const pseudoElementsOrdering = ['^&::first-letter', '^&::before', '^&::after', '^&::placeholder', '^&::[a-z]'];
 const pseudoClassesOrdering = [
-  '^&:first-letter',
   '^&:first',
-  '^&:nth',
-  '^&:last',
-  '^&:not',
+  '^&:first-child',
+  '^&:first-of-type',
+  '^&:lang',
+  '^&:last-child',
+  '^&:last-of-type',
+  '^&:nth-last-child',
+  '^&:nth-last-of-type',
+  '^&:nth-child',
+  '^&:nth-of-type',
+  '^&:only-child',
+  '^&:only-of-type',
   '^&:hover',
   '^&:focus',
   '^&:active',
-  '^&:[a-z]',
+  '^&:visited',
+  '^&:invalid',
+  '^&:valid',
 ];
 const pseudoElementsMixinsOrdering = [
   // before

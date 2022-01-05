@@ -227,6 +227,5 @@ module.exports = {
     'property-no-unknown': true,
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
-    'string-no-newline': true,
   },
 };

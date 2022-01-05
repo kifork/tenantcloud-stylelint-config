@@ -1,4 +1,6 @@
 # Change log
+## 1.0.1
+- Added new content order
 
 ## 1.0.5
 - Added new rules
