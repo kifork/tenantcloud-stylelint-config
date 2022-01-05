@@ -49,10 +49,10 @@ $breakpoints: (
   xxl: 1400px /* ≥1400px */
 ) !default;
 
-@mixin breakpoint-min(xs);
-@mixin breakpoint-max(xxl);
-@mixin breakpoint-only(lg);
-@mixin breakpoint-between(sm, md);
+@include breakpoint-min(xs);
+@include breakpoint-max(xxl);
+@include breakpoint-only(lg);
+@include breakpoint-between(sm, md);
 ```
 
 ## Expanding the config
