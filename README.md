@@ -32,6 +32,23 @@ _.stylelintrc_
 }
 ```
 
+_**ATTENTION!** This config is for media [mixins](https://gist.github.com/kifork/0c449aace117fb4db7695aea34b63925) instead of expressions:_
+```scss
+$breakpoints: (
+  xs: 0, /* <576px */
+  sm: 576px, /* ≥576px */
+  md: 768px, /* ≥768px */
+  lg: 992px, /* ≥992px */
+  xl: 1200px, /* ≥1200px */
+  xxl: 1400px /* ≥1400px */
+) !default;
+
+@mixin breakpoint-min(xs);
+@mixin breakpoint-max(xxl);
+@mixin breakpoint-only(lg);
+@mixin breakpoint-between(sm, md);
+```
+
 ## Expanding the config
 
 You can override existing rules or add new ones.
