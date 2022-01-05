@@ -32,8 +32,14 @@ _.stylelintrc_
 }
 ```
 
-_**ATTENTION!** This config is for media [mixins](https://gist.github.com/kifork/0c449aace117fb4db7695aea34b63925) instead of expressions:_
+**ATTENTION!** This config is for media [mixins](https://gist.github.com/kifork/0c449aace117fb4db7695aea34b63925) instead of **media queries**:
 ```scss
+// BAD
+@media (min-width: 1200px) {
+  width: 300px;
+}
+
+// GOOD
 $breakpoints: (
   xs: 0, /* <576px */
   sm: 576px, /* ≥576px */
