@@ -1,4 +1,7 @@
 # Change log
+## 1.1.2
+- Added new content order
+
 ## 1.0.1
 - Added new content order
 
