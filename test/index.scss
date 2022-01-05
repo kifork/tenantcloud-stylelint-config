@@ -1,0 +1,52 @@
+@mixin breakpoint-min($a) {
+	padding: 0;
+}
+
+@mixin breakpoint-max($a) {
+	padding: 0;
+}
+
+.block {
+	width: 0;
+	padding: 0;
+
+	@include breakpoint-min(xs) {
+		scroll-snap-stop: always;
+	}
+
+	@include breakpoint-min(sm) {
+		padding: 0;
+	}
+
+	@include breakpoint-max(sm) {
+		scroll-snap-stop: always;
+	}
+
+	@include breakpoint-only(sm) {
+		padding: 0;
+	}
+
+	@include breakpoint-only(md) {
+		margin: 0;
+	}
+
+	@include breakpoint-only(xl) {
+		padding: 0;
+	}
+
+	@include breakpoint-between(md, sm) {
+		padding: 0;
+	}
+
+	@include breakpoint-between(md, lg) {
+		padding: 0;
+	}
+
+	@include breakpoint-between(xl, sm) {
+		padding: 0;
+	}
+
+	@include breakpoint-between(xl, md) {
+		padding: 0;
+	}
+}

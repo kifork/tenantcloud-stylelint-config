@@ -15,7 +15,7 @@ const mixins = mixins =>
     };
   });
 
-const breakpoints = (...breakpoints) =>
+const breakpoints = breakpoints =>
   breakpoints.map(breakpoint => {
     return {
       type: 'at-rule',
@@ -24,7 +24,23 @@ const breakpoints = (...breakpoints) =>
     };
   });
 
-const breakpointsOrdering = ['min', 'only', 'between', 'max'];
+const breakpointValues = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
+const breakpointBetweenValues = [];
+
+const breakpointsOrder = name => breakpointValues.map(breakpoint => `${name}\\(${breakpoint}\\)`);
+const breakpointsOrderBetween = name =>
+  breakpointValues.map(breakpoint =>
+    breakpointValues.map(item => breakpointBetweenValues.push(`${name}\\(${breakpoint}, ${item}\\)`))
+  );
+
+breakpointsOrderBetween('between');
+
+const breakpointsOrdering = [
+  ...breakpointsOrder('min'),
+  ...breakpointsOrder('max'),
+  ...breakpointsOrder('only'),
+  ...breakpointBetweenValues,
+];
 const selectorsOrdering = ['^[a-z]', '^\\*', '^\\.\\w+', '^\\>', '^\\+', '^\\~', '^#', '^&\\.\\w+', '^&:not'];
 const pseudoElementsOrdering = ['^&::first-letter', '^&::before', '^&::after', '^&::placeholder', '^&::[a-z]'];
 const pseudoClassesOrdering = [

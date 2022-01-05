@@ -187,6 +187,7 @@ module.exports = {
     'scss/dollar-variable-colon-newline-after': null,
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-pattern': '^[a-z0-9-]+$',
+    'scss/at-mixin-parentheses-space-before': 'never',
     'sh-waqar/declaration-use-variable': [
       [
         '/color/',
