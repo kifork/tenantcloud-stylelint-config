@@ -144,7 +144,7 @@ module.exports = {
       'ignoreAtRules': ['include']
     }],
     'max-empty-lines': 1,
-    'selector-max-id': 0,
+    'selector-max-id': 3,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
     'no-duplicate-at-import-rules': true,
