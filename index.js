@@ -200,8 +200,6 @@ module.exports = {
     'scss/map-keys-quotes': 'always',
     'scss/function-unquote-no-unquoted-strings-inside': true,
     'scss/comment-no-empty': true,
-    'scss/double-slash-comment-whitespace-inside': 'always',
-    'scss/double-slash-comment-inline': 'always',
     'scss/dollar-variable-first-in-block': true,
     'scss/at-rule-conditional-no-parentheses': true,
     'scss/at-mixin-argumentless-call-parentheses': 'never',
