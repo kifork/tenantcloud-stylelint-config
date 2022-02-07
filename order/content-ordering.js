@@ -20,7 +20,7 @@ const breakpoints = breakpoints =>
     return {
       type: 'at-rule',
       name: 'include',
-      parameter: `^breakpoint-${breakpoint}`,
+      parameter: `^media-${breakpoint}`,
     };
   });
 
@@ -41,7 +41,7 @@ const breakpointsOrdering = [
   ...breakpointsOrder('only'),
   ...breakpointBetweenValues,
 ];
-const selectorsOrdering = ['^[a-z]', '^\\*', '^\\.\\w+', '^\\>', '^\\+', '^\\~', '^#', '^&\\.\\w+', '^&', '^&:not'];
+const selectorsOrdering = ['^[a-z]', '^\\*', '^\\.\\w+', '^\\[\\w+', '^\\>', '^\\+', '^\\~', '^#', '^&\\.\\w+', '^&\\[\\w+', '^&', '^&:not'];
 const pseudoElementsOrdering = ['^&::first-letter', '^&::before', '^&::after', '^&::placeholder', '^&::[a-z]'];
 const pseudoClassesOrdering = [
   '^&:first',

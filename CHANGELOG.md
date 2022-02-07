@@ -1,4 +1,8 @@
 # Change log
+## 1.2.0
+- Changed media ordering
+- Added new selectors ordering
+
 ## 1.1.3
 - Added new scss rules
 

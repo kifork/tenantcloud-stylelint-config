@@ -49,10 +49,10 @@ $breakpoints: (
   xxl: 1400px /* ≥1400px */
 ) !default;
 
-@include breakpoint-min(xs);
-@include breakpoint-max(xxl);
-@include breakpoint-only(lg);
-@include breakpoint-between(sm, md);
+@include media-min(xs);
+@include media-max(xxl);
+@include media-only(lg);
+@include media-between(sm, md);
 ```
 
 ## Expanding the config

@@ -1,11 +1,29 @@
-// @import '~@mobiscroll/angular/dist/css/mobiscroll';
-//
-// .block {
-//	@include breakpoint-min(sm) {
-//		line-height: 1;
-//	}
-//
-//	@include breakpoint-min(md) {
-//		line-height: 1;
-//	}
-// }
+.block {
+	p {
+		margin: 0;
+	}
+
+	.box {
+		margin: 5px;
+	}
+
+	[class*='col-'] {
+		margin: 0;
+	}
+
+	[class*='col-2'] {
+		margin: 0;
+	}
+
+	&[class*='col-'] {
+		margin: 0;
+	}
+
+	@include media-min(xs) {
+		margin: 0;
+	}
+
+	@include media-min(lg) {
+		margin: 5px;
+	}
+}
