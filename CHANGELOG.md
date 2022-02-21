@@ -1,4 +1,8 @@
 # Change log
+
+## 1.6.0
+- Added disallow duplicate media query rule
+
 ## 1.5.0
 - Added nesting media rule
 
