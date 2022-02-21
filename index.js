@@ -11,6 +11,7 @@ module.exports = {
     'stylelint-declaration-use-variable',
     'stylelint-scss',
     'media-query-nesting',
+    'disallow-media-duplicate',
   ],
   rules: {
     'order/properties-order': [
@@ -23,6 +24,7 @@ module.exports = {
     'no-descending-specificity': null,
     'color-hex-case': 'lower',
     'kiforks/media-query-nesting': true,
+    'kiforks/disallow-media-duplicate': true,
     'color-hex-length': 'long',
     'font-family-name-quotes': 'always-unless-keyword',
     'function-comma-newline-after': 'always-multi-line',
