@@ -1,4 +1,7 @@
 # Change log
+## 1.2.5
+- Added nesting media rule
+
 ## 1.2.0
 - Changed media ordering
 - Added new selectors ordering

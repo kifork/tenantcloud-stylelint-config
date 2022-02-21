@@ -10,6 +10,7 @@ module.exports = {
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-declaration-use-variable',
     'stylelint-scss',
+    'media-query-nesting',
   ],
   rules: {
     'order/properties-order': [
@@ -21,6 +22,7 @@ module.exports = {
     'font-family-no-missing-generic-family-keyword': true,
     'no-descending-specificity': null,
     'color-hex-case': 'lower',
+    'kiforks/media-query-nesting': true,
     'color-hex-length': 'long',
     'font-family-name-quotes': 'always-unless-keyword',
     'function-comma-newline-after': 'always-multi-line',
