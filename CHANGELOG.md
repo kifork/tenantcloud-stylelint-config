@@ -1,5 +1,5 @@
 # Change log
-## 1.2.5
+## 1.5.0
 - Added nesting media rule
 
 ## 1.2.0
