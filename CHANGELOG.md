@@ -1,5 +1,8 @@
 # Change log
 
+## 1.6.6
+- Added mobile/desktop media mixins
+
 ## 1.6.0
 - Added disallow duplicate media query rule
 

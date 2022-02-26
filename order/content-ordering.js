@@ -36,6 +36,18 @@ const breakpointsOrderBetween = name =>
 breakpointsOrderBetween('between');
 
 const breakpointsOrdering = [
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: `^media-mobile`,
+  },
+  {
+    type: 'at-rule',
+    name: 'include',
+    parameter: `^media-desktop`,
+  },
+  ...breakpointsOrder('mobile'),
+  ...breakpointsOrder('desktop'),
   ...breakpointsOrder('min'),
   ...breakpointsOrder('max'),
   ...breakpointsOrder('only'),
