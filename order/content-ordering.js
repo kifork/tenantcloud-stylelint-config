@@ -36,6 +36,8 @@ const breakpointsOrderBetween = name =>
 breakpointsOrderBetween('between');
 
 const breakpointsOrdering = [
+  ...breakpointsOrder('mobile'),
+  ...breakpointsOrder('desktop'),
   ...breakpointsOrder('min'),
   ...breakpointsOrder('max'),
   ...breakpointsOrder('only'),
