@@ -15,14 +15,30 @@ const mixins = mixins =>
     };
   });
 
-const breakpoints = breakpoints =>
-  breakpoints.map(breakpoint => {
+const breakpoints = breakpoints => {
+  const devices = [
+    {
+      type: 'at-rule',
+      name: 'include',
+      parameter: `^media-mobile`,
+    },
+    {
+      type: 'at-rule',
+      name: 'include',
+      parameter: `^media-desktop`,
+    },
+  ];
+
+  const mediaValues = breakpoints.map(breakpoint => {
     return {
       type: 'at-rule',
       name: 'include',
-      parameter: `^media-${breakpoint}`,
+      parameter: `^media-${ breakpoint }`,
     };
   });
+
+  return [...devices, ...mediaValues];
+}
 
 const breakpointValues = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 const breakpointBetweenValues = [];
@@ -36,16 +52,6 @@ const breakpointsOrderBetween = name =>
 breakpointsOrderBetween('between');
 
 const breakpointsOrdering = [
-  {
-    type: 'at-rule',
-    name: 'include',
-    parameter: `^media-mobile`,
-  },
-  {
-    type: 'at-rule',
-    name: 'include',
-    parameter: `^media-desktop`,
-  },
   ...breakpointsOrder('mobile'),
   ...breakpointsOrder('desktop'),
   ...breakpointsOrder('min'),
@@ -98,6 +104,7 @@ const pseudoClassesMixinsOrdering = ['hover', 'active', 'focus'];
 
 module.exports = {
   customProperties: 'custom-properties',
+  mediaBreakpointsMixins: breakpoints(breakpointsOrdering),
   dollarVariables: 'dollar-variables',
   declarations: 'declarations',
   resetMixins: {
@@ -118,7 +125,6 @@ module.exports = {
   pseudoClasses: selectors(pseudoClassesOrdering),
   pseudoElements: selectors(pseudoElementsOrdering),
   selectors: selectors(selectorsOrdering),
-  mediaBreakpointsMixins: breakpoints(breakpointsOrdering),
   mediaQueries: {
     'type': 'at-rule',
     'name': 'media',

@@ -18,4 +18,12 @@
 	&[class*='col-'] {
 		margin: 0;
 	}
+
+	@include media-mobile {
+		margin-bottom: 0;
+	}
+
+	@include media-min(xs) {
+		margin-bottom: 0;
+	}
 }
