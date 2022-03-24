@@ -248,7 +248,9 @@ module.exports = {
     'no-irregular-whitespace': true,
     'property-no-unknown': true,
     'selector-pseudo-class-no-unknown': true,
-    'selector-pseudo-element-no-unknown': true,
+    'selector-pseudo-element-no-unknown': {
+      'ignorePseudoElements': ['ng-deep'],
+    },
     'selector-class-pattern': [
       '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
       {

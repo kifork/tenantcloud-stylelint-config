@@ -1,5 +1,8 @@
 # Change log
 
+## 1.7.1
+- Added ng-deep pseudo element ignore
+
 ## 1.6.6
 - Added mobile/desktop media mixins
 
