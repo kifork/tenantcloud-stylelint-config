@@ -1,29 +1,17 @@
 .block {
 	p {
 		margin: 0;
-	}
 
-	.box {
-		margin: 5px;
-	}
+		p {
+			margin: 0;
 
-	[class*='col-'] {
-		margin: 0;
-	}
+			p {
+				margin: 0;
 
-	[class*='col-2'] {
-		margin: 0;
-	}
-
-	&[class*='col-'] {
-		margin: 0;
-	}
-
-	@include media-mobile {
-		margin-bottom: 0;
-	}
-
-	@include media-min(xs) {
-		margin-bottom: 0;
+				&::ng-deep {
+					margin: 0;
+				}
+			}
+		}
 	}
 }

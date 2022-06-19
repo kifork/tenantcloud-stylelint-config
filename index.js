@@ -12,6 +12,7 @@ module.exports = {
     'stylelint-scss',
     'media-query-nesting',
     'disallow-media-duplicate',
+    'max-nesting-depth',
   ],
   rules: {
     'order/properties-order': [
@@ -25,6 +26,10 @@ module.exports = {
     'color-hex-case': 'lower',
     'kiforks/media-query-nesting': true,
     'kiforks/disallow-media-duplicate': true,
+    'kiforks/max-nesting-depth': [3, {
+      'ignore': ['blockless-at-rules', 'pseudo-classes'],
+      'ignoreAtRules': ['include'],
+    }],
     'color-hex-length': 'long',
     'font-family-name-quotes': 'always-unless-keyword',
     'function-comma-newline-after': 'always-multi-line',
@@ -143,10 +148,6 @@ module.exports = {
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-newline-after': 'always',
     'indentation': 'tab',
-    'max-nesting-depth': [3, {
-      'ignore': ['blockless-at-rules', 'pseudo-classes'],
-      'ignoreAtRules': ['include']
-    }],
     'max-empty-lines': 1,
     'selector-max-id': 3,
     'no-eol-whitespace': true,
@@ -248,9 +249,9 @@ module.exports = {
     'no-irregular-whitespace': true,
     'property-no-unknown': true,
     'selector-pseudo-class-no-unknown': true,
-    'selector-pseudo-element-no-unknown': {
+    'selector-pseudo-element-no-unknown': [true, {
       'ignorePseudoElements': ['ng-deep'],
-    },
+    }],
     'selector-class-pattern': [
       '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
       {
