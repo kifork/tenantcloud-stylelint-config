@@ -1,4 +1,6 @@
-.block {
+:host {
+	margin: 0;
+
 	p {
 		margin: 0;
 
@@ -8,8 +10,10 @@
 			p {
 				margin: 0;
 
-				&::ng-deep {
-					margin: 0;
+				::ng-deep {
+					p {
+						margin: 0;
+					}
 				}
 			}
 		}
